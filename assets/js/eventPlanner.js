@@ -1132,8 +1132,8 @@ function displayEventsData(eventsData) {
       startDate: eventData.date.start_date,
       when: eventData.date.when,
       thumbnail: eventData.thumbnail,
-      ticketSource: eventData.ticket_info.source,
-      ticketLink: eventData.ticket_info.link,
+      ticketSource: eventData.ticket_info[0].source,
+      ticketLink: eventData.ticket_info[0].link,
     });
   }
   console.log(eventResults);
